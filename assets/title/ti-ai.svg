@@ -33,7 +33,7 @@
     
     .ai-text {
       font-family: 'Courier New', monospace;
-      font-size: 40px;
+      font-size: 24px;
       font-weight: bold;
       fill: url(#aiGradient);
       filter: url(#aiGlow);
