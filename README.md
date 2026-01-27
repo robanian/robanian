@@ -6,16 +6,16 @@
   <br/><br/>
   
   <!-- 키워드 SVG들 - 5개 기술 스택 -->
-  <img src="./assets/title/ti-infra.svg" height="40" />
-  <img src="./assets/title/ti-backend.svg" height="40" />
-  <img src="./assets/title/ti-gameengine.svg" height="40" />
-  <img src="./assets/title/ti-frontend.svg" height="40" />
-  <img src="./assets/title/ti-ai.svg" height="40" />
+  <img src="./assets/title/ti-infra.svg" height="60" />
+  <img src="./assets/title/ti-backend.svg" height="60" />
+  <img src="./assets/title/ti-gameengine.svg" height="60" />
+  <img src="./assets/title/ti-frontend.svg" height="60" />
+  <img src="./assets/title/ti-ai.svg" height="60" />
   
   <br/><br/>
   
   <!-- 타이핑 애니메이션 -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=5000&pause=2000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure...;WebRTC-based+Real-time+3D+Streaming...;Unreal+Engine+Content+Development..." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=6000&pause=1000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure . . .;WebRTC-based+Real-time+3D+Streaming . . .;Unreal+Engine+Content+Development . . ." alt="Typing SVG" />
   
 </div>
 
