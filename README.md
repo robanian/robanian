@@ -128,9 +128,9 @@ module.exports = LEO;
 
 <div align="center">
 
-<table>
+<table style="width: 100%; table-layout: fixed;">
 <tr>
-<td width="33%" valign="top">
+<td width="48%" valign="top">
 
 <img src="./assets/techstack/ts-Infra.svg" height="40" />
 
@@ -144,9 +144,7 @@ module.exports = LEO;
 | **Database** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) |
 | **IDE** | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat&logo=eclipse&logoColor=white) |
 
-</td>
-<td width="1%" style="border-right: 2px solid #30363d;"></td>
-<td width="33%" valign="top">
+---
 
 <img src="./assets/techstack/ts-Backend.svg" height="40" />
 
@@ -165,8 +163,8 @@ module.exports = LEO;
 | **Styling** | ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) |
 
 </td>
-<td width="1%" style="border-right: 2px solid #30363d;"></td>
-<td width="33%" valign="top">
+<td width="4%" style="border-right: 2px solid #30363d;"></td>
+<td width="48%" valign="top">
 
 <img src="./assets/techstack/ts-GameEngine.svg" height="40" />
 
