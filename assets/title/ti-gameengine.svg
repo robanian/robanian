@@ -1,76 +1,66 @@
-<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+<svg width="340" height="60" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="gameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
     </linearGradient>
     
-    <filter id="glow">
+    <filter id="gameGlow">
       <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
-    <style>
-      .game-group {
-        animation: glitch 0.6s ease-in-out infinite;
-        transform-origin: center;
-      }
-      
-      @keyframes glitch {
-        0%, 100% { 
-          transform: translate(0, 0) rotate(0deg) skewX(0deg);
-          opacity: 1;
-        }
-        15% { 
-          transform: translate(-3px, 2px) rotate(-1deg) skewX(-2deg);
-          opacity: 0.9;
-        }
-        30% { 
-          transform: translate(3px, -2px) rotate(1deg) skewX(2deg);
-          opacity: 0.95;
-        }
-        45% { 
-          transform: translate(-2px, -2px) rotate(-0.5deg) skewX(-1deg);
-          opacity: 0.85;
-        }
-        60% { 
-          transform: translate(2px, 2px) rotate(0.5deg) skewX(1deg);
-          opacity: 0.9;
-        }
-        75% { 
-          transform: translate(-1px, 1px) rotate(-0.3deg) skewX(-0.5deg);
-          opacity: 0.95;
-        }
-      }
-      
-      .game-text {
-        font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
-        font-size: 24px;
-        font-weight: 900;
-        fill: url(#gameGrad);
-        letter-spacing: 1px;
-        filter: url(#glow);
-      }
-      
-      .gamepad-icon {
-        fill: url(#gameGrad);
-        opacity: 0.3;
-      }
-      
-      .glitch-effect {
-        animation: color-shift 0.3s ease-in-out infinite;
-      }
-      
-      @keyframes color-shift {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.7; }
-      }
-    </style>
   </defs>
+  
+  <style>
+    .game-group {
+      animation: glitch 0.6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    
+    @keyframes glitch {
+      0%, 100% { 
+        transform: translate(0, 0) rotate(0deg) skewX(0deg);
+        opacity: 1;
+      }
+      15% { 
+        transform: translate(-3px, 2px) rotate(-1deg) skewX(-2deg);
+        opacity: 0.9;
+      }
+      30% { 
+        transform: translate(3px, -2px) rotate(1deg) skewX(2deg);
+        opacity: 0.95;
+      }
+      45% { 
+        transform: translate(-2px, -2px) rotate(-0.5deg) skewX(-1deg);
+        opacity: 0.85;
+      }
+      60% { 
+        transform: translate(2px, 2px) rotate(0.5deg) skewX(1deg);
+        opacity: 0.9;
+      }
+      75% { 
+        transform: translate(-1px, 1px) rotate(-0.3deg) skewX(-0.5deg);
+        opacity: 0.95;
+      }
+    }
+    
+    .game-text {
+      font-family: 'Courier New', monospace;
+      font-size: 40px;
+      font-weight: bold;
+      fill: url(#gameGradient);
+      filter: url(#gameGlow);
+    }
+    
+    .gamepad-icon {
+      fill: url(#gameGradient);
+      opacity: 0.3;
+    }
+  </style>
   
   <g class="game-group">
     <!-- 게임패드 아이콘 -->
@@ -80,6 +70,6 @@
     <rect class="gamepad-icon" x="9" y="25" width="1" height="3"/>
     <rect class="gamepad-icon" x="7" y="27" width="5" height="1"/>
     
-    <text class="game-text glitch-effect" x="32" y="40">Game Engine</text>
+    <text x="32" y="40" class="game-text">Game Engine</text>
   </g>
 </svg>
