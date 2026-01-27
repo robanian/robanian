@@ -1,7 +1,7 @@
 <div align="center">
   
   <!-- 코딩 심볼 LED 네온 배너 -->
-  <img src="./assets/neon-banner-static.svg" alt="LEO's Code Neon" />
+  <img src="./assets/title/ti-banner.svg" alt="LEO's Code Neon" />
   
   <br/><br/>
   
@@ -12,8 +12,8 @@
   
   <br/><br/>
   
-  <!-- 타이핑 애니메이션 -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=4D9EFF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=WebRTC-based+Real-time+3D+Streaming;Backend+Architecture+%26+Infrastructure;Unreal+Engine+for+Games+%26+Real-time+Content" alt="Typing SVG" />
+  <!-- 타이핑 애니메이션 (백스페이스 효과) -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3500&pause=2000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=WebRTC-based+Real-time+3D+Streaming|;Backend+Architecture+%26+Infrastructure|;Unreal+Engine+for+Games+%26+Real-time+Content|" alt="Typing SVG" />
   
 </div>
 
