@@ -1,7 +1,7 @@
 <div align="center">
   
   <!-- 코딩 심볼 LED 네온 배너 -->
-  <img src="./assets/neon-code-banner.svg" alt="LEO's Code Neon" />
+  <img src="./assets/neon-banner-static.svg" alt="LEO's Code Neon" />
   
   <br/><br/>
   
@@ -126,8 +126,6 @@ module.exports = LEO;
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-
 <table width="100%">
 <tr>
 <td width="48%" valign="top">
@@ -135,37 +133,37 @@ module.exports = LEO;
 <img src="./assets/techstack/ts-Infra.svg" height="40" />
 
 <table width="100%">
-<tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
-<tr><td width="100"><b>Cloud</b></td><td>
+<tr><th width="20%" align="left">Layer</th><th width="80%" align="left">Stack</th></tr>
+<tr><td><b>Cloud</b></td><td>
 <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Kakao-FFCD00?style=flat&logo=kakao&logoColor=black" />
 <img src="https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Infra</b></td><td>
+<tr><td><b>Infra</b></td><td>
 <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white" />
 <img src="https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>CI/CD</b></td><td>
+<tr><td><b>CI/CD</b></td><td>
 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Self--Hosted-2088FF?style=flat&logo=github&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Monitor</b></td><td>
+<tr><td><b>Monitor</b></td><td>
 <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" />
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Loki-F46800?style=flat" />
 </td></tr>
-<tr><td width="100"><b>DevOps</b></td><td>
+<tr><td><b>DevOps</b></td><td>
 <img src="https://img.shields.io/badge/NAS-B5B5B6?style=flat&logo=synology&logoColor=black" />
 <img src="https://img.shields.io/badge/SVN-809CC9?style=flat&logo=subversion&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Database</b></td><td>
+<tr><td><b>Database</b></td><td>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>IDE</b></td><td>
+<tr><td><b>IDE</b></td><td>
 <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
 <img src="https://img.shields.io/badge/Eclipse-2C2255?style=flat&logo=eclipse&logoColor=white" />
 </td></tr>
@@ -176,13 +174,13 @@ module.exports = LEO;
 <img src="./assets/techstack/ts-Backend.svg" height="40" />
 
 <table width="100%">
-<tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
-<tr><td width="100"><b>Language</b></td><td>
+<tr><th width="20%" align="left">Layer</th><th width="80%" align="left">Stack</th></tr>
+<tr><td><b>Language</b></td><td>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Framework</b></td><td>
+<tr><td><b>Framework</b></td><td>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />
 <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=springboot&logoColor=white" />
@@ -196,12 +194,12 @@ module.exports = LEO;
 <img src="./assets/techstack/ts-Frontend.svg" height="40" />
 
 <table width="100%">
-<tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
-<tr><td width="100"><b>Framework</b></td><td>
+<tr><th width="20%" align="left">Layer</th><th width="80%" align="left">Stack</th></tr>
+<tr><td><b>Framework</b></td><td>
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" />
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
 </td></tr>
-<tr><td width="100"><b>Styling</b></td><td>
+<tr><td><b>Styling</b></td><td>
 <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
 </td></tr>
 </table>
@@ -213,11 +211,11 @@ module.exports = LEO;
 <img src="./assets/techstack/ts-GameEngine.svg" height="40" />
 
 <table width="100%">
-<tr><th width="100" align="left">Type</th><th align="left">Stack</th></tr>
-<tr><td width="100"><b>Engine</b></td><td>
+<tr><th width="20%" align="left">Type</th><th width="80%" align="left">Stack</th></tr>
+<tr><td><b>Engine</b></td><td>
 <img src="https://img.shields.io/badge/Unreal-0E1128?style=flat&logo=unrealengine&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Streaming</b></td><td>
+<tr><td><b>Streaming</b></td><td>
 <img src="https://img.shields.io/badge/WebRTC-333333?style=flat&logo=webrtc&logoColor=white" />
 </td></tr>
 </table>
@@ -227,21 +225,21 @@ module.exports = LEO;
 <img src="./assets/techstack/ts-AI.svg" height="40" />
 
 <table width="100%">
-<tr><th width="100" align="left">Purpose</th><th align="left">Stack</th></tr>
-<tr><td width="100"><b>LLM</b></td><td>
+<tr><th width="20%" align="left">Purpose</th><th width="80%" align="left">Stack</th></tr>
+<tr><td><b>LLM</b></td><td>
 <img src="https://img.shields.io/badge/Claude-191919?style=flat&logo=anthropic&logoColor=white" />
 <img src="https://img.shields.io/badge/ChatGPT-412991?style=flat&logo=openai&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>ML/CV</b></td><td>
+<tr><td><b>ML/CV</b></td><td>
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
 <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" />
 </td></tr>
-<tr><td width="100"><b>Vector</b></td><td>
+<tr><td><b>Vector</b></td><td>
 <img src="https://img.shields.io/badge/Pinecone-000000?style=flat" />
 <img src="https://img.shields.io/badge/RAG-764BA2?style=flat" />
 </td></tr>
-<tr><td width="100"><b>Notebook</b></td><td>
+<tr><td><b>Notebook</b></td><td>
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" />
 <img src="https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white" />
 </td></tr>
