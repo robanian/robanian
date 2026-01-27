@@ -128,14 +128,13 @@ module.exports = LEO;
 
 <div align="center">
 
-<table>
+<table width="100%">
 <tr>
-<td width="500" valign="top">
+<td width="48%" valign="top">
 
 <img src="./assets/techstack/ts-Infra.svg" height="40" />
 
-<table>
-<tr><td colspan="2"><img width="500" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></td></tr>
+<table width="100%">
 <tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
 <tr><td width="100"><b>Cloud</b></td><td>
 <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" /><br/>
@@ -176,8 +175,7 @@ module.exports = LEO;
 
 <img src="./assets/techstack/ts-Backend.svg" height="40" />
 
-<table>
-<tr><td colspan="2"><img width="500" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></td></tr>
+<table width="100%">
 <tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
 <tr><td width="100"><b>Language</b></td><td>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
@@ -197,8 +195,7 @@ module.exports = LEO;
 
 <img src="./assets/techstack/ts-Frontend.svg" height="40" />
 
-<table>
-<tr><td colspan="2"><img width="500" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></td></tr>
+<table width="100%">
 <tr><th width="100" align="left">Layer</th><th align="left">Stack</th></tr>
 <tr><td width="100"><b>Framework</b></td><td>
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" />
@@ -210,13 +207,12 @@ module.exports = LEO;
 </table>
 
 </td>
-<td width="50"></td>
-<td width="500" valign="top">
+<td width="4%"></td>
+<td width="48%" valign="top">
 
 <img src="./assets/techstack/ts-GameEngine.svg" height="40" />
 
-<table>
-<tr><td colspan="2"><img width="500" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></td></tr>
+<table width="100%">
 <tr><th width="100" align="left">Type</th><th align="left">Stack</th></tr>
 <tr><td width="100"><b>Engine</b></td><td>
 <img src="https://img.shields.io/badge/Unreal-0E1128?style=flat&logo=unrealengine&logoColor=white" />
@@ -230,8 +226,7 @@ module.exports = LEO;
 
 <img src="./assets/techstack/ts-AI.svg" height="40" />
 
-<table>
-<tr><td colspan="2"><img width="500" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></td></tr>
+<table width="100%">
 <tr><th width="100" align="left">Purpose</th><th align="left">Stack</th></tr>
 <tr><td width="100"><b>LLM</b></td><td>
 <img src="https://img.shields.io/badge/Claude-191919?style=flat&logo=anthropic&logoColor=white" />
