@@ -128,61 +128,149 @@ module.exports = LEO;
 
 <div align="center">
 
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%; max-width: 1200px; table-layout: fixed;">
+<colgroup>
+<col style="width: 48%;">
+<col style="width: 4%;">
+<col style="width: 48%;">
+</colgroup>
 <tr>
-<td width="48%" valign="top">
+<td valign="top">
 
 <img src="./assets/techstack/ts-Infra.svg" height="40" />
 
-| Layer | Stack |
-|:------|:------|
-| **Cloud** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white) ![Kakao Cloud](https://img.shields.io/badge/Kakao-FFCD00?style=flat&logo=kakao&logoColor=black) ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white) |
-| **Infra** | ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white) ![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white) |
-| **CI/CD** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) ![Self-Hosted](https://img.shields.io/badge/Self--Hosted-2088FF?style=flat&logo=github&logoColor=white) |
-| **Monitoring** | ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white) ![Loki](https://img.shields.io/badge/Loki-F46800?style=flat) |
-| **DevOps** | ![NAS](https://img.shields.io/badge/NAS-B5B5B6?style=flat&logo=synology&logoColor=black) ![SVN](https://img.shields.io/badge/SVN-809CC9?style=flat&logo=subversion&logoColor=white) |
-| **Database** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white) |
-| **IDE** | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat&logo=eclipse&logoColor=white) |
+<table style="width: 100%; table-layout: fixed;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tr><th align="left">Layer</th><th align="left">Stack</th></tr>
+<tr><td><b>Cloud</b></td><td>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" />
+<img src="https://img.shields.io/badge/Kakao-FFCD00?style=flat&logo=kakao&logoColor=black" />
+<img src="https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white" />
+</td></tr>
+<tr><td><b>Infra</b></td><td>
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white" />
+<img src="https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white" />
+</td></tr>
+<tr><td><b>CI/CD</b></td><td>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/Self--Hosted-2088FF?style=flat&logo=github&logoColor=white" />
+</td></tr>
+<tr><td><b>Monitoring</b></td><td>
+<img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" />
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" />
+<img src="https://img.shields.io/badge/Loki-F46800?style=flat" />
+</td></tr>
+<tr><td><b>DevOps</b></td><td>
+<img src="https://img.shields.io/badge/NAS-B5B5B6?style=flat&logo=synology&logoColor=black" />
+<img src="https://img.shields.io/badge/SVN-809CC9?style=flat&logo=subversion&logoColor=white" />
+</td></tr>
+<tr><td><b>Database</b></td><td>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white" />
+</td></tr>
+<tr><td><b>IDE</b></td><td>
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+<img src="https://img.shields.io/badge/Eclipse-2C2255?style=flat&logo=eclipse&logoColor=white" />
+</td></tr>
+</table>
 
 ---
 
 <img src="./assets/techstack/ts-Backend.svg" height="40" />
 
-| Layer | Stack |
-|:------|:------|
-| **Language** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white) |
-| **Framework** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=springboot&logoColor=white) ![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) |
+<table style="width: 100%; table-layout: fixed;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tr><th align="left">Layer</th><th align="left">Stack</th></tr>
+<tr><td><b>Language</b></td><td>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white" />
+</td></tr>
+<tr><td><b>Framework</b></td><td>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=springboot&logoColor=white" />
+<img src="https://img.shields.io/badge/Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=black" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" />
+</td></tr>
+</table>
 
 ---
 
 <img src="./assets/techstack/ts-Frontend.svg" height="40" />
 
-| Layer | Stack |
-|:------|:------|
-| **Framework** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) |
-| **Styling** | ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) |
+<table style="width: 100%; table-layout: fixed;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tr><th align="left">Layer</th><th align="left">Stack</th></tr>
+<tr><td><b>Framework</b></td><td>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
+</td></tr>
+<tr><td><b>Styling</b></td><td>
+<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
+</td></tr>
+</table>
 
 </td>
-<td width="4%" style="border-right: 2px solid #30363d;"></td>
-<td width="48%" valign="top">
+<td style="border-right: 2px solid #30363d;"></td>
+<td valign="top">
 
 <img src="./assets/techstack/ts-GameEngine.svg" height="40" />
 
-| Type | Stack |
-|:-----|:------|
-| **Engine** | ![Unreal Engine](https://img.shields.io/badge/Unreal-0E1128?style=flat&logo=unrealengine&logoColor=white) |
-| **Streaming** | ![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat&logo=webrtc&logoColor=white) |
+<table style="width: 100%; table-layout: fixed;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tr><th align="left">Type</th><th align="left">Stack</th></tr>
+<tr><td><b>Engine</b></td><td>
+<img src="https://img.shields.io/badge/Unreal-0E1128?style=flat&logo=unrealengine&logoColor=white" />
+</td></tr>
+<tr><td><b>Streaming</b></td><td>
+<img src="https://img.shields.io/badge/WebRTC-333333?style=flat&logo=webrtc&logoColor=white" />
+</td></tr>
+</table>
 
 ---
 
 <img src="./assets/techstack/ts-AI.svg" height="40" />
 
-| Purpose | Stack |
-|:--------|:------|
-| **LLM** | ![Claude](https://img.shields.io/badge/Claude-191919?style=flat&logo=anthropic&logoColor=white) ![ChatGPT](https://img.shields.io/badge/ChatGPT-412991?style=flat&logo=openai&logoColor=white) |
-| **ML/CV** | ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white) |
-| **Vector** | ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat) ![RAG](https://img.shields.io/badge/RAG-764BA2?style=flat) |
-| **Notebook** | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white) ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white) |
+<table style="width: 100%; table-layout: fixed;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tr><th align="left">Purpose</th><th align="left">Stack</th></tr>
+<tr><td><b>LLM</b></td><td>
+<img src="https://img.shields.io/badge/Claude-191919?style=flat&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/ChatGPT-412991?style=flat&logo=openai&logoColor=white" />
+</td></tr>
+<tr><td><b>ML/CV</b></td><td>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" />
+</td></tr>
+<tr><td><b>Vector</b></td><td>
+<img src="https://img.shields.io/badge/Pinecone-000000?style=flat" />
+<img src="https://img.shields.io/badge/RAG-764BA2?style=flat" />
+</td></tr>
+<tr><td><b>Notebook</b></td><td>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" />
+<img src="https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white" />
+</td></tr>
+</table>
 
 </td>
 </tr>
