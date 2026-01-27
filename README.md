@@ -15,7 +15,7 @@
   <br/><br/>
   
   <!-- 타이핑 애니메이션 -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=6000&pause=1000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure . . .;WebRTC-based+Real-time+3D+Streaming . . .;Unreal+Engine+Content+Development . . ." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=6000&pause=1000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure . . .;WebRTC-based+Real-time+3D+Streaming . . .;Unreal+Engine+Content+Development . . .;" alt="Typing SVG" />
   
 </div>
 
