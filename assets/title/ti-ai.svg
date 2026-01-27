@@ -1,0 +1,88 @@
+<svg width="280" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#67e8f9;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <style>
+      .ai-group {
+        animation: pulse-rotate 3s ease-in-out infinite;
+        transform-origin: 20px 30px;
+      }
+      
+      @keyframes pulse-rotate {
+        0%, 100% { 
+          transform: scale(1) rotate(0deg);
+          opacity: 1;
+        }
+        50% { 
+          transform: scale(1.05) rotate(5deg);
+          opacity: 0.85;
+        }
+      }
+      
+      .ai-text {
+        font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+        font-size: 24px;
+        font-weight: 900;
+        fill: url(#aiGrad);
+        letter-spacing: 1px;
+        filter: url(#glow);
+      }
+      
+      .neural-icon {
+        fill: none;
+        stroke: url(#aiGrad);
+        stroke-width: 1.5;
+        opacity: 0.4;
+      }
+      
+      .neural-node {
+        fill: url(#aiGrad);
+        opacity: 0.6;
+        animation: node-pulse 2s ease-in-out infinite;
+      }
+      
+      .node-1 { animation-delay: 0s; }
+      .node-2 { animation-delay: 0.3s; }
+      .node-3 { animation-delay: 0.6s; }
+      .node-4 { animation-delay: 0.9s; }
+      
+      @keyframes node-pulse {
+        0%, 100% { r: 2; opacity: 0.6; }
+        50% { r: 3; opacity: 1; }
+      }
+    </style>
+  </defs>
+  
+  <g class="ai-group">
+    <!-- 뉴럴 네트워크 아이콘 -->
+    <line class="neural-icon" x1="8" y1="25" x2="15" y2="30"/>
+    <line class="neural-icon" x1="8" y1="35" x2="15" y2="30"/>
+    <line class="neural-icon" x1="15" y1="30" x2="22" y2="25"/>
+    <line class="neural-icon" x1="15" y1="30" x2="22" y2="35"/>
+    <line class="neural-icon" x1="22" y1="25" x2="29" y2="30"/>
+    <line class="neural-icon" x1="22" y1="35" x2="29" y2="30"/>
+    
+    <!-- 노드들 -->
+    <circle class="neural-node node-1" cx="8" cy="25" r="2"/>
+    <circle class="neural-node node-2" cx="8" cy="35" r="2"/>
+    <circle class="neural-node node-3" cx="15" cy="30" r="2"/>
+    <circle class="neural-node node-4" cx="22" cy="25" r="2"/>
+    <circle class="neural-node node-1" cx="22" cy="35" r="2"/>
+    <circle class="neural-node node-2" cx="29" cy="30" r="2"/>
+    
+    <text class="ai-text" x="38" y="40">AI & Machine Learning</text>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="150" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backendGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecb71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <style>
+      .backend-group {
+        animation: pulse 2.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { 
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% { 
+          transform: scale(1.05);
+          opacity: 0.85;
+        }
+      }
+      
+      .backend-text {
+        font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+        font-size: 24px;
+        font-weight: 900;
+        fill: url(#backendGrad);
+        letter-spacing: 1px;
+        filter: url(#glow);
+      }
+      
+      .db-icon {
+        fill: url(#backendGrad);
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  
+  <g class="backend-group">
+    <!-- 데이터베이스 아이콘 -->
+    <ellipse class="db-icon" cx="15" cy="22" rx="10" ry="4"/>
+    <rect class="db-icon" x="5" y="22" width="20" height="16"/>
+    <ellipse class="db-icon" cx="15" cy="38" rx="10" ry="4"/>
+    <ellipse class="db-icon" cx="15" cy="30" rx="10" ry="4"/>
+    
+    <text class="backend-text" x="32" y="40">Backend</text>
+  </g>
+</svg>

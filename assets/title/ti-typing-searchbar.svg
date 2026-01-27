@@ -1,0 +1,108 @@
+<svg width="700" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      
+      .cursor {
+        animation: blink 1s infinite;
+      }
+      
+      /* 타이핑: 0-4초, 대기: 4-6초, 삭제: 6-10초 */
+      .text1 {
+        animation: 
+          showCursor 0s 0s forwards,
+          type1 4s steps(40) 0s forwards,
+          hold1 2s 4s forwards,
+          hideCursor 0s 6s forwards,
+          erase1 4s steps(40) 6s forwards,
+          hide 0s 10s forwards;
+      }
+      
+      /* 타이핑: 10-14초, 대기: 14-16초, 삭제: 16-20초 */
+      .text2 {
+        animation:
+          hide 0s 0s forwards,
+          show 0s 10s forwards,
+          showCursor 0s 10s forwards,
+          type2 4s steps(42) 10s forwards,
+          hold2 2s 14s forwards,
+          hideCursor 0s 16s forwards,
+          erase2 4s steps(42) 16s forwards,
+          hide 0s 20s forwards;
+      }
+      
+      /* 타이핑: 20-24초, 대기: 24-26초, 삭제: 26-30초 */
+      .text3 {
+        animation:
+          hide 0s 0s forwards,
+          show 0s 20s forwards,
+          showCursor 0s 20s forwards,
+          type3 4s steps(46) 20s forwards,
+          hold3 2s 24s forwards,
+          hideCursor 0s 26s forwards,
+          erase3 4s steps(46) 26s forwards;
+      }
+      
+      @keyframes type1 { from { width: 0; } to { width: 100%; } }
+      @keyframes type2 { from { width: 0; } to { width: 100%; } }
+      @keyframes type3 { from { width: 0; } to { width: 100%; } }
+      
+      @keyframes erase1 { from { width: 100%; } to { width: 0; } }
+      @keyframes erase2 { from { width: 100%; } to { width: 0; } }
+      @keyframes erase3 { from { width: 100%; } to { width: 0; } }
+      
+      @keyframes hold1 { from, to { width: 100%; } }
+      @keyframes hold2 { from, to { width: 100%; } }
+      @keyframes hold3 { from, to { width: 100%; } }
+      
+      @keyframes showCursor { from, to { } }
+      .showCursor .cursor { display: block; }
+      
+      @keyframes hideCursor { from, to { } }
+      .hideCursor .cursor { display: none; }
+      
+      @keyframes show { from, to { opacity: 1; } }
+      @keyframes hide { from, to { opacity: 0; } }
+      
+      .text-container {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+      text {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 16px;
+        fill: #4D9EFF;
+      }
+    </style>
+  </defs>
+  
+  <!-- 검색창 배경 -->
+  <rect x="50" y="10" width="600" height="40" rx="20" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- 검색 아이콘 -->
+  <circle cx="75" cy="30" r="6" fill="none" stroke="#6e7681" stroke-width="1.5"/>
+  <line x1="79.5" y1="34.5" x2="83" y2="38" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 타이핑 텍스트 그룹 -->
+  <g class="text1">
+    <text x="100" y="35">WebRTC-based Real-time 3D Streaming</text>
+    <rect class="cursor" x="470" y="20" width="2" height="20" fill="#4D9EFF"/>
+  </g>
+  
+  <g class="text2">
+    <text x="100" y="35">Backend Architecture &amp; Infrastructure</text>
+    <rect class="cursor" x="470" y="20" width="2" height="20" fill="#4D9EFF"/>
+  </g>
+  
+  <g class="text3">
+    <text x="100" y="35">Unreal Engine for Games &amp; Real-time Content</text>
+    <rect class="cursor" x="520" y="20" width="2" height="20" fill="#4D9EFF"/>
+  </g>
+  
+  <!-- 전체 애니메이션 30초 주기 반복 -->
+  <animate attributeName="opacity" values="1;1" dur="30s" repeatCount="indefinite"/>
+</svg>

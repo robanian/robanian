@@ -33,16 +33,24 @@
     </radialGradient>
 
     <!-- Orange tube border glow -->
-    <filter id="tubeGlowOrange" x="-40%" y="-40%" width="180%" height="180%">
+    <filter id="tubeGlowOrange" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="2.2" result="b1"/>
-      <feGaussianBlur stdDeviation="7.2" result="b2"/>
+      <feGaussianBlur stdDeviation="8.5" result="b2"/>
+      <feGaussianBlur stdDeviation="14" result="b3"/>
+      <feColorMatrix in="b3" type="matrix"
+        values="
+          1 0 0 0 0
+          0 0.55 0 0 0
+          0 0 0.15 0 0
+          0 0 0 0.90 0" result="b3o"/>
       <feColorMatrix in="b2" type="matrix"
         values="
           1 0 0 0 0
-          0 0.72 0 0 0
-          0 0 0.25 0 0
-          0 0 0 0.95 0" result="b2o"/>
+          0 0.70 0 0 0
+          0 0 0.22 0 0
+          0 0 0 0.92 0" result="b2o"/>
       <feMerge>
+        <feMergeNode in="b3o"/>
         <feMergeNode in="b2o"/>
         <feMergeNode in="b1"/>
         <feMergeNode in="SourceGraphic"/>
@@ -66,62 +74,103 @@
       </feMerge>
     </filter>
 
+    <!-- vas만 살짝 강조하는 "약한" 보조 글로우 -->
+    <filter id="vasExtraGlowSoft" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="1.2" result="v1"/>
+      <feGaussianBlur stdDeviation="4.0" result="v2"/>
+      <!-- v2에 색감을 살짝 오렌지로 고정 -->
+      <feColorMatrix in="v2" type="matrix"
+        values="
+          1 0 0 0 0
+          0 0.65 0 0 0
+          0 0 0.18 0 0
+          0 0 0 0.95 0" result="v2o"/>
+      <feMerge>
+        <feMergeNode in="v2o"/>
+        <feMergeNode in="v1"/>
+      </feMerge>
+    </filter>
+
     <style>
-      /* (4) vas만: 빠른 파지직 OFF -> 4초 OFF -> 천천히 ON flicker -> 4초 ON 반복 */
       @keyframes vasCycle {
-        /* ====== ON 유지 (시작은 켜진 상태) ====== */
-        0%   { opacity: 1; }
+        0% { opacity: 1; }
+        2% { opacity: 1; }
+        4% { opacity: 0.70; }
+        6% { opacity: 0.28; }
+        7% { opacity: 0.92; }
+        8% { opacity: 0.12; }
+        9% { opacity: 0.38; }
+        10% { opacity: 0.08; }
 
-        /* ====== 빠른 파지직(OFF로 떨어지는 구간) : 약 0.8초 ====== */
-        4%   { opacity: 0.55; }
-        5%   { opacity: 1; }
-        6%   { opacity: 0.35; }
-        7%   { opacity: 0.95; }
-        8%   { opacity: 0.12; }
-        9%   { opacity: 0.30; }
-        10%  { opacity: 0.08; }  /* 최종 OFF 도달 */
+        43% { opacity: 0.08; }
 
-        /* ====== OFF 유지 : 약 4초 ====== */
-        10%  { opacity: 0.08; }
-        43%  { opacity: 0.08; }
+        45% { opacity: 0.02; }
+        46% { opacity: 0.35; }
+        47% { opacity: 0.06; }
+        48% { opacity: 0.62; }
+        49% { opacity: 0.10; }
+        50% { opacity: 0.82; }
+        51% { opacity: 0.04; }
+        52% { opacity: 0.92; }
+        53% { opacity: 0.22; }
+        54% { opacity: 0.98; }
+        55% { opacity: 0.55; }
+        56% { opacity: 1.00; }
+        57% { opacity: 0.78; }
+        58% { opacity: 1.00; }
+        59% { opacity: 0.88; }
+        60% { opacity: 1.00; }
+        62% { opacity: 0.95; }
+        64% { opacity: 1.00; }
+        66% { opacity: 0.98; }
+        68% { opacity: 1.00; }
+        70% { opacity: 1.00; }
 
-        /* ====== 켜질 때도 '꺼질 때처럼' 파지직(flicker)하면서 복귀 : 약 3초 ====== */
-        /* OFF 유지 끝: 43% */
-        45% { opacity: 0.10; }
-        47% { opacity: 0.28; }
-        49% { opacity: 0.12; }
-        51% { opacity: 0.45; }
-        53% { opacity: 0.18; }
-        55% { opacity: 0.62; }
-        57% { opacity: 0.24; }
-        59% { opacity: 0.78; }
-        61% { opacity: 0.40; }
-        63% { opacity: 0.90; }
-        65% { opacity: 0.55; }
-        67% { opacity: 0.98; }
-        69% { opacity: 0.82; }
-        70% { opacity: 1; }
-
-        /* ====== ON 유지 : 약 4초 ====== */
-        70%  { opacity: 1; }
-        94%  { opacity: 1; }
-
-        /* ====== 마지막에 살짝 예열(다음 OFF 전 전광판 느낌) ====== */
-        96%  { opacity: 0.88; }
-        98%  { opacity: 1; }
+        94% { opacity: 1; }
+        96% { opacity: 0.88; }
+        98% { opacity: 1; }
         100% { opacity: 1; }
       }
 
-      /* 타이틀 전체는 켜진 전광판 느낌 유지 (은은한 밝기 변화) */
       @keyframes titleBreath {
         0%, 100% { opacity: 1; }
-        50%      { opacity: 0.92; }
+        50% { opacity: 0.92; }
+      }
+
+      @keyframes vasGlowCycle {
+        /* 기본: 완전 OFF */
+        0% { opacity: 0; }
+
+
+        /* OFF 직전만 잠깐 치고 빠짐 (과전압) */
+        1.8% { opacity: 0; }
+        2.2% { opacity: 0.70; }
+        2.6% { opacity: 0.10; }
+        3.0% { opacity: 0.55; }
+        3.5% { opacity: 0.08; }
+
+
+        /* OFF 구간: 계속 OFF */
+        10% { opacity: 0; }
+        43% { opacity: 0; }
+
+
+        /* ON 시작: 예열처럼 조금만 */
+        45% { opacity: 0; }
+        50% { opacity: 0.18; }
+        56% { opacity: 0.10; }
+
+
+        /* ON 안정화: 다시 꺼서 본문과 동일하게 */
+        70% { opacity: 0; }
+        94% { opacity: 0; }
+        100% { opacity: 0; }
       }
 
       .border {
         fill: none;
-        stroke: #ffa200;             /* (1) 오렌지 주광등 감성 */
-        stroke-width: 3.4;
+        stroke: #ffa200;
+        stroke-width: 3.8;
         rx: 20;
         filter: url(#tubeGlowOrange);
         opacity: 0.98;
@@ -132,18 +181,19 @@
         font-size: 78px;
         font-weight: 900;
         letter-spacing: 8px;
-        fill: #fff6e6;               /* 따뜻한 백색 */
+        fill: #fff6e6;
         paint-order: stroke;
         stroke: rgba(255, 200, 120, 0.22);
         stroke-width: 2;
-        filter: url(#ledTextGlowOrange); /* (1) 확산/글로우 */
+        filter: url(#ledTextGlowOrange);
         animation: titleBreath 3.2s ease-in-out infinite;
       }
 
-      .vas {
-        /* (2)(4) vas만 꺼지고 켜지는 사이클 */
-        animation: vasCycle 12s linear infinite;
-        /* 꺼질 때도 LED 확산이 살짝 남게: fill은 유지하되 opacity로 제어 */
+      .vas { animation: vasCycle 12s linear infinite; }
+
+      .vasGlowOnly{
+        filter: url(#vasExtraGlowSoft);
+        animation: vasGlowCycle 12s linear infinite;
       }
 
       .subtitle {
@@ -168,12 +218,20 @@
   <!-- Border -->
   <rect x="20" y="20" width="1160" height="260" class="border"/>
 
-  <!-- (2)(3) Title: 완전 중앙정렬 + Can/vas 겹침 해결(tspan) -->
+  <!-- ✅ Title: 원본 (딱 1번만) -->
   <text x="600" y="140" text-anchor="middle" class="title">
     LEO's Can<tspan class="vas">vas</tspan>
   </text>
 
-  <!-- Subtitle (2) 중앙정렬 / 위로 뜨는 느낌 조정 -->
+  <!-- ✅ vas 글로우 전용 레이어: 본문X, 빛만 -->
+  <text x="600" y="140" text-anchor="middle" pointer-events="none"
+        style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace;
+              font-size: 78px; font-weight: 900; letter-spacing: 8px;
+              fill: #fff6e6;">
+    <tspan>LEO's Can</tspan><tspan class="vasGlowOnly" dx="0">vas</tspan>
+  </text>
+
+  <!-- Subtitle -->
   <text x="600" y="198" text-anchor="middle" class="subtitle">
     Drawing Systems &amp; Architecture
   </text>

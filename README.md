@@ -1,19 +1,21 @@
 <div align="center">
   
-  <!-- 코딩 심볼 LED 네온 배너 -->
+  <!-- LED 네온 배너 -->
   <img src="./assets/title/ti-banner.svg" alt="LEO's Code Neon" />
   
   <br/><br/>
   
-  <!-- 흔들리는 키워드 SVG들 -->
-  <img src="./assets/webrtc-shake.svg" height="35" />
-  <img src="./assets/architecture-float.svg" height="35" />
-  <img src="./assets/streaming-pulse.svg" height="35" />
+  <!-- 키워드 SVG들 - 5개 기술 스택 -->
+  <img src="./assets/title/ti-infra.svg" height="40" />
+  <img src="./assets/title/ti-backend.svg" height="40" />
+  <img src="./assets/title/ti-gameengine.svg" height="40" />
+  <img src="./assets/title/ti-frontend.svg" height="40" />
+  <img src="./assets/title/ti-ai.svg" height="40" />
   
   <br/><br/>
   
-  <!-- 타이핑 애니메이션 (백스페이스 효과) -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3500&pause=2000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=WebRTC-based+Real-time+3D+Streaming|;Backend+Architecture+%26+Infrastructure|;Unreal+Engine+for+Games+%26+Real-time+Content|" alt="Typing SVG" />
+  <!-- 타이핑 애니메이션 -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=5000&pause=2000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure...;WebRTC-based+Real-time+3D+Streaming...;Unreal+Engine+Content+Development..." alt="Typing SVG" />
   
 </div>
 
@@ -26,97 +28,83 @@
 ## 👨‍💻 const LEO = { ... }
 
 ```javascript
-const express = require('express');
-const LEO = express();
-
-// Core Identity
-LEO.set('role', 'Tech Lead & System Architect');
-LEO.set('company', 'DDukDDak');
-LEO.set('mission', [
-  'WebRTC-based Real-time 3D Streaming Infrastructure',
-  'Backend Platform Architecture Design', 
-  'Automation & Operations at Scale'
-]);
-
-// Technical Expertise
-LEO.use('/specialization', {
-  streaming: {
-    technology: 'WebRTC-based Real-time 3D Rendering',
-    engine: 'Unreal Engine 5.5',
-    use_cases: ['Interior Design Visualization', 'Upcoming Steam Game Development']
+const LEO = {
+  role: 'Tech Lead & System Architect',
+  
+  focus: [
+    'Backend Architecture & Infrastructure',
+    'WebRTC Real-time 3D Streaming',
+    'Unreal Engine Content Development'
+  ],
+  
+  expertise: {
+    backend: {
+      stack: 'Node.js/Express + Prisma ORM',
+      database: 'Schema-driven design with 17+ tables, type-safe migrations',
+      architecture: 'Modular Monolithic → MSA Ready'
+    },
+    infrastructure: {
+      orchestration: 'Docker + Portainer + GitHub Actions CI/CD',
+      networking: 'Nginx Proxy Manager + Cloudflare integration',
+      collaboration: 'Team-wide NAS infrastructure, version control, deployment standards',
+      monitoring: 'Grafana + Prometheus + Loki for production observability'
+    },
+    streaming: {
+      'Unreal Engine': 'Metaverse production experience, interactive content development',
+      'WebRTC': '3D streaming infrastructure with Unreal Engine integration'
+    },
+    ai: {
+      rag: 'Pinecone vector DB + OpenAI embeddings for intelligent recommendations',
+      ml: 'Custom ML models with OpenCV, Pandas, NumPy for data-driven insights'
+    }
   },
-  backend: {
-    stack: 'Node.js/Express + Prisma ORM',
-    architecture: 'Modular Monolithic with Future MSA Readiness',
-    database: 'MySQL + Redis for Distributed Sessions'
-  },
-  infrastructure: {
-    cloud: 'Kakao Cloud with Dynamic VM Provisioning',
-    orchestration: 'Docker + Portainer + GitHub Actions',
-    monitoring: 'Grafana + Prometheus + Loki'
-  }
-});
-
-// Philosophy - Inspired by Elbert Hubbard
-LEO.use('/philosophy', (req, res, next) => {
-  const wisdom = {
-    quote: '"Do not take life too seriously. You will never get out of it alive."',
-    author: '— Elbert Hubbard',
-    interpretation: [
-      'Build systems that survive, not systems that are perfect',
-      'Long-term maintainability over short-term perfection',
-      'Pragmatic architecture that scales with reality',
-      'Operational stability beats theoretical elegance'
-    ]
-  };
   
-  res.json({
-    principle: 'Sustainable Architecture Philosophy',
-    motto: 'Production-Stable Systems > Perfect Code',
-    approach: wisdom
-  });
-  
-  next();
-});
-
-// Current Mission
-LEO.get('/now', (req, res) => {
-  res.status(200).json({
-    project: 'DDukDDak - AI Interior Design Platform',
-    stack: 'WebRTC 3D Streaming + RAG-powered AI Consultation',
-    milestone: 'February 2025 Closed Beta Launch',
-    tasks: [
-      '⚡ Kakao Cloud OpenAPI integration for auto-scaling',
-      '🎮 Multiple Cirrus server orchestration via Matchmaker',
-      '🔐 Redis-based distributed session management',
-      '📦 TypeScript migration with Prisma type generation',
-      '🎯 Steam game development with Unreal Engine'
-    ]
-  });
-});
-
-// Error Handling - Learn from Production
-LEO.use((err, req, res, next) => {
-  console.error('💥 Error detected:', err.message);
-  
-  // Philosophy in action: graceful degradation
-  res.status(500).json({
-    error: 'System architecture evolving...',
-    recovery: 'Analyze logs → Network diagnostics → Incremental fixes',
-    lesson: 'Every failure teaches sustainable design'
-  });
-});
-
-// System Online
-const PORT = process.env.PORT || 3000;
-LEO.listen(PORT, () => {
-  console.log(`🚀 LEO's Architecture running on port ${PORT}`);
-  console.log('🎨 Drawing systems that last, not just systems that shine');
-  console.log('⚡ Building for the long run, one pragmatic decision at a time');
-});
-
-module.exports = LEO;
+  principles: 'Building systems designed to evolve, not just to launch'
+};
 ```
+
+<details>
+<summary><b>🇰🇷 한국어 버전</b></summary>
+
+<br/>
+
+```javascript
+const LEO = {
+  역할: '기술 리드 & 시스템 아키텍트',
+  
+  집중분야: [
+    '백엔드 아키텍처 및 인프라',
+    'WebRTC 실시간 3D 스트리밍',
+    '언리얼 엔진 콘텐츠 개발'
+  ],
+  
+  전문기술: {
+    백엔드: {
+      스택: 'Node.js/Express + Prisma ORM',
+      데이터베이스: '17개 이상 테이블 설계, 타입 안전 마이그레이션',
+      아키텍처: '모듈러 모놀리스 → MSA 전환 준비'
+    },
+    인프라: {
+      오케스트레이션: 'Docker + Portainer + GitHub Actions CI/CD',
+      네트워킹: 'Nginx Proxy Manager + Cloudflare 통합',
+      협업환경: '팀 전체 NAS 인프라, 버전 관리, 배포 표준화',
+      모니터링: 'Grafana + Prometheus + Loki 운영 가시성'
+    },
+    스트리밍: {
+      '언리얼 엔진': '메타버스 제작 경험, 인터랙티브 콘텐츠 개발',
+      'WebRTC': '언리얼 엔진을 활용한 3D 스트리밍 인프라'
+    },
+    AI: {
+      RAG: 'Pinecone 벡터 DB + OpenAI 임베딩 기반 지능형 추천',
+      ML: 'OpenCV, Pandas, NumPy 기반 커스텀 ML 모델'
+    }
+  },
+  
+  원칙: '출시로 끝나지 않고, 진화하도록 설계된 시스템 구축'
+};
+```
+
+</details>
 
 <br/>
 
@@ -144,6 +132,10 @@ module.exports = LEO;
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white" />
 <img src="https://img.shields.io/badge/PM2-2B037A?style=flat&logo=pm2&logoColor=white" />
+</td></tr>
+<tr><td><b>Network</b></td><td>
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white" />
+<img src="https://img.shields.io/badge/Proxy_Manager-009639?style=flat&logo=nginx&logoColor=white" />
 </td></tr>
 <tr><td><b>CI/CD</b></td><td>
 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" /><br/>
@@ -249,202 +241,35 @@ module.exports = LEO;
 </tr>
 </table>
 
-</div>
-
 <br/>
 
 ---
 
 <br/>
 
-## 🏗️ Architecture Philosophy
-
-```javascript
-/**
- * LEO's Sustainable Architecture Manifesto
- * 
- * "Do not take life too seriously. You will never get out of it alive."
- * — Elbert Hubbard
- * 
- * In code: Build systems that SURVIVE, not systems that are PERFECT.
- */
-
-const philosophy = {
-  
-  // Core Belief: Longevity over Perfection
-  sustainability: {
-    principle: 'Long-term maintainability beats short-term brilliance',
-    why: 'Perfect systems fail under real-world pressure',
-    how: [
-      'Modular boundaries for future evolution',
-      'Operational stability as first-class concern',
-      'Documentation that survives team changes',
-      'Error handling that teaches, not just catches'
-    ]
-  },
-  
-  // Architecture Pattern
-  structure: {
-    pattern: 'Modular Monolithic Architecture',
-    tradeoff: 'Solo/small team efficiency + Future MSA readiness',
-    decision: 'Start simple, split when pain exceeds cost',
-    modules: 'Feature-based > Layer-based (for AI context & maintainability)'
-  },
-  
-  // Code Standards
-  pragmaticCode: {
-    naming: '*.routes.js → *.controller.js → *.service.js → *.model.js',
-    errorFlow: 'Controllers: success() only | Services: throw fail/Error',
-    typeSystem: 'Prisma ORM → Type-safe queries → TypeScript migration prep',
-    validation: 'Joi at boundaries, Prisma types internally'
-  },
-  
-  // Infrastructure Principles
-  operations: {
-    separation: 'NPM proxy | Bastion SSH | Dedicated monitoring servers',
-    networking: 'Manual port forwarding > UPnP (learned the hard way)',
-    deployment: 'Docker + GitHub Actions (hybrid runners for security)',
-    scaling: 'Vertical first, horizontal when metrics prove necessity'
-  },
-  
-  // Performance Wisdom (Battle-Tested)
-  optimization: {
-    streaming: {
-      lesson: 't.MaxFPS 30 prevents GPU bottleneck (unlimited FPS = death)',
-      gpu: 'DLSS optimization: 29% utilization with quality maintained',
-      tsrConflict: 'TSR + DLSS = choose one, mixing kills performance'
-    },
-    sessions: 'Redis for distributed state (MySQL for durability)',
-    caching: 'Cache what scales poorly, not what changes frequently'
-  },
-  
-  // The Hubbard Principle in Action
-  realityCheck: {
-    perfectionist: 'Rewrites code 10 times, launches never',
-    pragmatist: 'Ships v1, learns from users, iterates to v10',
-    winner: 'Pragmatist - because systems that don\'t ship don\'t survive',
-    reminder: 'Production failures teach more than pristine local tests'
-  }
-  
-};
-
-// Final Wisdom
-console.log('🎨 Drawing architecture for the long haul...');
-console.log('⚡ Building systems that survive reality, not just impress peers');
-console.log('🚀 Remember: Working software > Perfect software');
-
-export default philosophy;
-```
-
-<br/>
-
----
-
-<br/>
-
-## 📊 GitHub Activity
-
-<div align="center">
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=robanian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=4D9EFF&icon_color=FFD700&text_color=C9D1D9"/>
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=robanian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4D9EFF&text_color=C9D1D9"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-  
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=robanian&theme=tokyonight&hide_border=true&background=0D1117&stroke=4D9EFF&ring=FFD700&fire=FF6B6B&currStreakLabel=C9D1D9)](https://git.io/streak-stats)
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-## 💼 Current Mission: DDukDDak
+## 📊 GitHub Stats
 
 <div align="center">
 
-```mermaid
-graph TB
-    subgraph "Client Layer"
-        A[User Browser/App]
-    end
-    
-    subgraph "WebRTC Streaming Infrastructure"
-        B[Matchmaker Service]
-        C[Cirrus Server 1]
-        D[Cirrus Server 2]
-        E[Cirrus Server N...]
-    end
-    
-    subgraph "Compute Layer - Kakao Cloud"
-        F[UE5.5 Instance 1<br/>DLSS Optimized]
-        G[UE5.5 Instance 2<br/>Dynamic Provisioning]
-        H[UE5.5 Instance N<br/>Auto-scaling]
-    end
-    
-    subgraph "Backend Services"
-        I[Express Backend API]
-        J[MySQL + Prisma ORM]
-        K[Redis Session Store]
-    end
-    
-    subgraph "AI Services"
-        L[RAG Consultation System]
-        M[Pinecone Vector DB]
-        N[OpenAI GPT-4]
-    end
-    
-    A -->|WebRTC Request| B
-    B -->|Load Balance| C
-    B -->|Route| D
-    B -->|Distribute| E
-    
-    C <-->|WebSocket| F
-    D <-->|WebSocket| G
-    E <-->|WebSocket| H
-    
-    A -->|REST API| I
-    I -->|Query| J
-    I -->|Session| K
-    I -->|AI Request| L
-    
-    L -->|Semantic Search| M
-    L -->|LLM Response| N
-    
-    style A fill:#61DAFB,stroke:#333,stroke-width:2px
-    style B fill:#FF6B6B,stroke:#333,stroke-width:2px
-    style C fill:#FFD93D,stroke:#333,stroke-width:2px
-    style D fill:#FFD93D,stroke:#333,stroke-width:2px
-    style E fill:#FFD93D,stroke:#333,stroke-width:2px
-    style F fill:#764BA2,stroke:#333,stroke-width:2px
-    style G fill:#764BA2,stroke:#333,stroke-width:2px
-    style H fill:#764BA2,stroke:#333,stroke-width:2px
-    style I fill:#339933,stroke:#333,stroke-width:2px
-    style J fill:#4479A1,stroke:#333,stroke-width:2px
-    style K fill:#DC382D,stroke:#333,stroke-width:2px
-    style L fill:#412991,stroke:#333,stroke-width:2px
-    style M fill:#000000,stroke:#FFD700,stroke-width:2px
-    style N fill:#412991,stroke:#333,stroke-width:2px
-```
+<table>
+<tr>
+<td align="center" width="280">
 
-### 🎯 **DDukDDak** - AI-Powered Interior Design Platform
+**Most Used Languages**
 
-**Tech Stack:**
-- **Streaming**: WebRTC-based 3D Visualization with Unreal Engine 5.5
-- **Backend**: Node.js/Express + Prisma ORM + MySQL/Redis
-- **AI**: RAG System (Pinecone + OpenAI) for Design Consultation
-- **Infrastructure**: Kakao Cloud + Docker + Dynamic VM Provisioning
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=robanian&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&text_color=c9d1d9" width="280" />
 
-**Target**: February 2025 Closed Beta Launch
+</td>
+<td width="40"></td>
+<td align="center" width="380">
 
-**What's Next**: Steam game development leveraging the same UE5.5 infrastructure
+**GitHub Stats**
+
+<img src="https://github-readme-stats.vercel.app/api?username=robanian&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&icon_color=4d9eff&text_color=c9d1d9" width="380" />
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -454,74 +279,88 @@ graph TB
 
 <br/>
 
-## 🎮 Beyond Enterprise: Gaming Ahead
-
-```javascript
-// Upcoming: Leveraging Unreal Engine for Game Development
-const futureVision = {
-  platform: 'Steam',
-  engine: 'Unreal Engine 5.5',
-  leverage: [
-    'Reuse DDukDDak streaming infrastructure knowledge',
-    'Apply production-hardened architecture patterns',
-    'Bridge enterprise tech with gaming creativity'
-  ],
-  philosophy: 'Same engine, different canvas - still drawing systems'
-};
-
-console.log('🎮 From interior design visualization to full games');
-console.log('🚀 Building worlds, not just software');
-```
-
-<br/>
-
----
-
-<br/>
-
-## 📫 Let's Connect
+## 🔗 Connect & Learn More
 
 <div align="center">
 
-```javascript
-const contact = {
-  openTo: [
-    'WebRTC & Real-time Streaming Architecture',
-    'Unreal Engine Integration & Optimization',
-    'Backend System Design & Scalability',
-    'Infrastructure Automation & Operations',
-    'Gaming + Enterprise Tech Crossover'
-  ],
-  response: 'Usually within 24 hours',
-  philosophy: 'Building systems that survive > Building perfect systems'
-};
+<table>
+<tr>
+<td align="center" width="180">
 
-// Always happy to discuss sustainable architecture
-```
+**🌐 Portfolio (preparing)**
 
-<br/>
+<a href="https://your-name.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Visit_Now-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Frobanian&count_bg=%234D9EFF&title_bg=%230D1117&icon=github.svg&icon_color=%23FFFFFF&title=Profile+Views&edge_flat=false)](https://hits.seeyoufarm.com)
+<sub>Projects & Case Studies</sub>
+
+</td>
+<td width="30"></td>
+<td align="center" width="180">
+
+**📚 Tech Docs (preparing)**
+
+<a href="https://robanian.github.io" target="_blank">
+  <img src="https://img.shields.io/badge/Read_Docs-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<sub>Architecture & Practices</sub>
+
+</td>
+<td width="30"></td>
+<td align="center" width="180">
+
+**📝 Blog (preparing)**
+
+<a href="https://your-blog.tistory.com" target="_blank">
+  <img src="https://img.shields.io/badge/Read_Blog-000000?style=for-the-badge&logo=tistory&logoColor=white" />
+</a>
+
+<sub>Technical Insights</sub>
+
+</td>
+</tr>
+<tr><td colspan="5" height="20"></td></tr>
+<tr>
+<td align="center" width="180">
+
+**💼 LinkedIn (preparing)**
+
+<a href="https://linkedin.com/in/your-profile" target="_blank">
+  <img src="https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<sub>Professional Network</sub>
+
+</td>
+<td width="30"></td>
+<td align="center" width="180">
+
+**📧 Email**
+
+<a href="mailto:colorfuleffect@gmail.com">
+  <img src="https://img.shields.io/badge/Send_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<sub>Direct Contact</sub>
+
+</td>
+<td width="30"></td>
+<td align="center" width="180">
+
+**🎮 Steam (preparing)**
+
+<a href="https://steamcommunity.com/id/your-id" target="_blank">
+  <img src="https://img.shields.io/badge/View_Profile-000000?style=for-the-badge&logo=steam&logoColor=white" />
+</a>
+
+<sub>Game Development</sub>
+
+</td>
+</tr>
+</table>
 
 </div>
 
-<br/>
-
----
-
-<div align="center">
-  
-  <br/>
-  
-  ### ⚡ The Hubbard Principle
-  
-  **"Do not take life too seriously. You will never get out of it alive."**  
-  — Elbert Hubbard
-  
-  <br/>
-  
-  <sub>Building systems that survive reality 🎨 Not chasing perfection that never ships 🚀</sub>
-  
-  <br/><br/>
-  
-</div>
+<br/><br/>
