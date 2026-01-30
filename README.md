@@ -75,8 +75,6 @@
 
 ---
 
-<br/>
-
 ## 👨‍💻 const LEO = { ... }
 
 ```javascript
@@ -163,8 +161,6 @@ const LEO = {
 <br/>
 
 ---
-
-<br/>
 
 ## 🛠️ Tech Stack
 
@@ -299,8 +295,6 @@ const LEO = {
 
 ---
 
-<br/>
-
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -330,8 +324,6 @@ const LEO = {
 <br/>
 
 ---
-
-<br/>
 
 ## 🔗 Contact
 
