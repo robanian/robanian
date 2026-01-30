@@ -305,7 +305,7 @@ const LEO = {
 
 **Most Used Languages**
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=robanian&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&text_color=c9d1d9&cache_seconds=1800&v=1" width="280" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=robanian&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&text_color=c9d1d9" width="280" />
 
 </td>
 <td width="40"></td>
@@ -313,7 +313,7 @@ const LEO = {
 
 **GitHub Stats**
 
-<img src="https://github-readme-stats.vercel.app/api?username=robanian&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&icon_color=4d9eff&text_color=c9d1d9&cache_seconds=1800&v=1" width="380" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=robanian&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4d9eff&icon_color=4d9eff&text_color=c9d1d9" width="380" />
 
 </td>
 </tr>
