@@ -17,8 +17,91 @@
 <!-- 타이핑 애니메이션 -->
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=6000&pause=1000&color=4D9EFF&center=true&vCenter=true&width=700&height=60&lines=Backend+Architecture+%26+Infrastructure+.+.+.;WebRTC-based+Real-time+3D+Streaming+.+.+.;Unreal+Engine+Content+Development+.+.+." alt="Typing SVG" />
 
-  
 </div>
+
+<br/>
+
+---
+
+<hr style="
+width: 80%;
+height: 1px;
+border: none;
+margin: 28px auto;
+background: linear-gradient(
+to right,
+transparent,
+#4d9eff,
+#9f7aea,
+#4d9eff,
+transparent
+);
+box-shadow: 0 0 6px rgba(77, 158, 255, 0.6);
+"/>
+
+<br/>
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="220">
+
+<strong>🌐 Portfolio (preparing)</strong><br/><br/>
+
+<a href="https://your-name.vercel.app" target="_blank">
+<img src="https://img.shields.io/badge/VISIT_NOW-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+</a><br/>
+
+<sub>Projects & Case Studies</sub>
+
+</td>
+
+<td width="40"></td>
+
+<td align="center" width="220">
+
+<strong>📚 Tech Docs</strong><br/><br/>
+
+<a href="https://robanian.github.io" target="_blank">
+<img src="https://img.shields.io/badge/READ_DOCS-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a><br/>
+
+<sub>Architecture & Practices</sub>
+
+</td>
+
+<td width="40"></td>
+
+<td align="center" width="220">
+
+<strong>📝 Blog (preparing)</strong><br/><br/>
+
+<a href="https://your-blog.tistory.com" target="_blank">
+<img src="https://img.shields.io/badge/READ_BLOG-000000?style=for-the-badge&logo=tistory&logoColor=white" />
+</a><br/>
+
+<sub>Technical Insights</sub>
+
+</td>
+</tr>
+</table>
+</div>
+
+<hr style="
+width: 70%;
+height: 1px;
+border: none;
+margin: 28px auto;
+background: linear-gradient(
+to right,
+transparent,
+#4d9eff,
+#9f7aea,
+#4d9eff,
+transparent
+);
+box-shadow: 0 0 6px rgba(77, 158, 255, 0.6);
+"/>
 
 <br/>
 
@@ -30,37 +113,39 @@
 
 ```javascript
 const LEO = {
-  role: 'Tech Lead & System Architect',
-  
+  role: "Tech Lead & System Architect",
+
   focus: [
-    'Backend Architecture & Infrastructure',
-    'WebRTC Real-time 3D Streaming',
-    'Unreal Engine Content Development'
+    "Backend Architecture & Infrastructure",
+    "WebRTC Real-time 3D Streaming",
+    "Unreal Engine Content Development",
   ],
-  
+
   expertise: {
     backend: {
-      stack: 'Node.js/Express + Prisma ORM',
-      database: 'Schema-driven design with 17+ tables, type-safe migrations',
-      architecture: 'Modular Monolithic → MSA Ready'
+      stack: "Node.js/Express + Prisma ORM",
+      database: "Schema-driven design with 17+ tables, type-safe migrations",
+      architecture: "Modular Monolithic → MSA Ready",
     },
     infrastructure: {
-      orchestration: 'Docker + Portainer + GitHub Actions CI/CD',
-      networking: 'Nginx Proxy Manager + Cloudflare integration',
-      collaboration: 'Team-wide NAS infrastructure, version control, deployment standards',
-      monitoring: 'Grafana + Prometheus + Loki for production observability'
+      orchestration: "Docker + Portainer + GitHub Actions CI/CD",
+      networking: "Nginx Proxy Manager + Cloudflare integration",
+      collaboration:
+        "Team-wide NAS infrastructure, version control, deployment standards",
+      monitoring: "Grafana + Prometheus + Loki for production observability",
     },
     streaming: {
-      'Unreal Engine': 'Metaverse production experience, interactive content development',
-      'WebRTC': '3D streaming infrastructure with Unreal Engine integration'
+      "Unreal Engine":
+        "Metaverse production experience, interactive content development",
+      WebRTC: "3D streaming infrastructure with Unreal Engine integration",
     },
     ai: {
-      rag: 'Pinecone vector DB + OpenAI embeddings for intelligent recommendations',
-      ml: 'Custom ML models with OpenCV, Pandas, NumPy for data-driven insights'
-    }
+      rag: "Pinecone vector DB + OpenAI embeddings for intelligent recommendations",
+      ml: "Custom ML models with OpenCV, Pandas, NumPy for data-driven insights",
+    },
   },
-  
-  principles: 'Building systems designed to evolve, not just to launch'
+
+  principles: "Building systems designed to evolve, not just to launch",
 };
 ```
 
@@ -71,37 +156,37 @@ const LEO = {
 
 ```javascript
 const LEO = {
-  역할: '기술 리드 & 시스템 아키텍트',
-  
+  역할: "기술 리드 & 시스템 아키텍트",
+
   집중분야: [
-    '백엔드 아키텍처 및 인프라',
-    'WebRTC 실시간 3D 스트리밍',
-    '언리얼 엔진 콘텐츠 개발'
+    "백엔드 아키텍처 및 인프라",
+    "WebRTC 실시간 3D 스트리밍",
+    "언리얼 엔진 콘텐츠 개발",
   ],
-  
+
   전문기술: {
     백엔드: {
-      스택: 'Node.js/Express + Prisma ORM',
-      데이터베이스: '17개 이상 테이블 설계, 타입 안전 마이그레이션',
-      아키텍처: '모듈러 모놀리스 → MSA 전환 준비'
+      스택: "Node.js/Express + Prisma ORM",
+      데이터베이스: "17개 이상 테이블 설계, 타입 안전 마이그레이션",
+      아키텍처: "모듈러 모놀리스 → MSA 전환 준비",
     },
     인프라: {
-      오케스트레이션: 'Docker + Portainer + GitHub Actions CI/CD',
-      네트워킹: 'Nginx Proxy Manager + Cloudflare 통합',
-      협업환경: '팀 전체 NAS 인프라, 버전 관리, 배포 표준화',
-      모니터링: 'Grafana + Prometheus + Loki 운영 가시성'
+      오케스트레이션: "Docker + Portainer + GitHub Actions CI/CD",
+      네트워킹: "Nginx Proxy Manager + Cloudflare 통합",
+      협업환경: "팀 전체 NAS 인프라, 버전 관리, 배포 표준화",
+      모니터링: "Grafana + Prometheus + Loki 운영 가시성",
     },
     스트리밍: {
-      '언리얼 엔진': '메타버스 제작 경험, 인터랙티브 콘텐츠 개발',
-      'WebRTC': '언리얼 엔진을 활용한 3D 스트리밍 인프라'
+      "언리얼 엔진": "메타버스 제작 경험, 인터랙티브 콘텐츠 개발",
+      WebRTC: "언리얼 엔진을 활용한 3D 스트리밍 인프라",
     },
     AI: {
-      RAG: 'Pinecone 벡터 DB + OpenAI 임베딩 기반 지능형 추천',
-      ML: 'OpenCV, Pandas, NumPy 기반 커스텀 ML 모델'
-    }
+      RAG: "Pinecone 벡터 DB + OpenAI 임베딩 기반 지능형 추천",
+      ML: "OpenCV, Pandas, NumPy 기반 커스텀 ML 모델",
+    },
   },
-  
-  원칙: '출시로 끝나지 않고, 진화하도록 설계된 시스템 구축'
+
+  원칙: "출시로 끝나지 않고, 진화하도록 설계된 시스템 구축",
 };
 ```
 
@@ -280,88 +365,80 @@ const LEO = {
 
 <br/>
 
-## 🔗 Connect & Learn More
+## 🔗 Contact
+
+<hr style="
+width: 100%;
+height: 1px;
+border: none;
+margin: 36px auto 28px;
+background: repeating-linear-gradient(
+to right,
+rgba(77, 158, 255, 0.0),
+rgba(77, 158, 255, 0.0) 6px,
+rgba(77, 158, 255, 0.45) 6px,
+rgba(77, 158, 255, 0.45) 12px
+);
+"/>
 
 <div align="center">
-
 <table>
 <tr>
 <td align="center" width="180">
 
-**🌐 Portfolio (preparing)**
-
-<a href="https://your-name.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Visit_Now-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>
-
-<sub>Projects & Case Studies</sub>
-
-</td>
-<td width="30"></td>
-<td align="center" width="180">
-
-**📚 Tech Docs (preparing)**
-
-<a href="https://robanian.github.io" target="_blank">
-  <img src="https://img.shields.io/badge/Read_Docs-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<sub>Architecture & Practices</sub>
-
-</td>
-<td width="30"></td>
-<td align="center" width="180">
-
-**📝 Blog (preparing)**
-
-<a href="https://your-blog.tistory.com" target="_blank">
-  <img src="https://img.shields.io/badge/Read_Blog-000000?style=for-the-badge&logo=tistory&logoColor=white" />
-</a>
-
-<sub>Technical Insights</sub>
-
-</td>
-</tr>
-<tr><td colspan="5" height="20"></td></tr>
-<tr>
-<td align="center" width="180">
-
-**💼 LinkedIn (preparing)**
+<strong>💼 LinkedIn (preparing)</strong><br/><br/>
 
 <a href="https://linkedin.com/in/your-profile" target="_blank">
-  <img src="https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+<img src="https://img.shields.io/badge/CONNECT-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a><br/>
 
 <sub>Professional Network</sub>
 
 </td>
-<td width="30"></td>
+
+<td width="40"></td>
+
 <td align="center" width="180">
 
-**📧 Email**
+<strong>📧 Email</strong><br/><br/>
 
 <a href="mailto:colorfuleffect@gmail.com">
-  <img src="https://img.shields.io/badge/Send_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+<img src="https://img.shields.io/badge/SEND_MAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a><br/>
 
 <sub>Direct Contact</sub>
 
 </td>
-<td width="30"></td>
+
+<td width="40"></td>
+
 <td align="center" width="180">
 
-**🎮 Steam (preparing)**
+<strong>🎮 Steam (preparing)</strong><br/><br/>
 
 <a href="https://steamcommunity.com/id/your-id" target="_blank">
-  <img src="https://img.shields.io/badge/View_Profile-000000?style=for-the-badge&logo=steam&logoColor=white" />
-</a>
+<img src="https://img.shields.io/badge/VIEW_PROFILE-000000?style=for-the-badge&logo=steam&logoColor=white" />
+</a><br/>
 
 <sub>Game Development</sub>
 
 </td>
 </tr>
 </table>
-
 </div>
 
-<br/><br/>
+<hr style="
+width: 100%;
+height: 1px;
+border: none;
+margin: 36px auto 28px;
+background: repeating-linear-gradient(
+to right,
+rgba(77, 158, 255, 0.0),
+rgba(77, 158, 255, 0.0) 6px,
+rgba(77, 158, 255, 0.45) 6px,
+rgba(77, 158, 255, 0.45) 12px
+);
+"/>
+
+<br/>
