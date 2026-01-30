@@ -23,23 +23,7 @@
 
 ---
 
-<hr style="
-width: 80%;
-height: 1px;
-border: none;
-margin: 28px auto;
-background: linear-gradient(
-to right,
-transparent,
-#4d9eff,
-#9f7aea,
-#4d9eff,
-transparent
-);
-box-shadow: 0 0 6px rgba(77, 158, 255, 0.6);
-"/>
-
-<br/>
+## 🔗 Learn More
 
 <div align="center">
 <table>
@@ -86,22 +70,6 @@ box-shadow: 0 0 6px rgba(77, 158, 255, 0.6);
 </tr>
 </table>
 </div>
-
-<hr style="
-width: 70%;
-height: 1px;
-border: none;
-margin: 28px auto;
-background: linear-gradient(
-to right,
-transparent,
-#4d9eff,
-#9f7aea,
-#4d9eff,
-transparent
-);
-box-shadow: 0 0 6px rgba(77, 158, 255, 0.6);
-"/>
 
 <br/>
 
@@ -367,20 +335,6 @@ const LEO = {
 
 ## 🔗 Contact
 
-<hr style="
-width: 100%;
-height: 1px;
-border: none;
-margin: 36px auto 28px;
-background: repeating-linear-gradient(
-to right,
-rgba(77, 158, 255, 0.0),
-rgba(77, 158, 255, 0.0) 6px,
-rgba(77, 158, 255, 0.45) 6px,
-rgba(77, 158, 255, 0.45) 12px
-);
-"/>
-
 <div align="center">
 <table>
 <tr>
@@ -426,19 +380,5 @@ rgba(77, 158, 255, 0.45) 12px
 </tr>
 </table>
 </div>
-
-<hr style="
-width: 100%;
-height: 1px;
-border: none;
-margin: 36px auto 28px;
-background: repeating-linear-gradient(
-to right,
-rgba(77, 158, 255, 0.0),
-rgba(77, 158, 255, 0.0) 6px,
-rgba(77, 158, 255, 0.45) 6px,
-rgba(77, 158, 255, 0.45) 12px
-);
-"/>
 
 <br/>
